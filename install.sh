@@ -297,3 +297,6 @@ if promptyn "Your data on $NAND_DEVICE will lost, Are you sure to continue?[y/n]
 		echoYellow "To fix the partition table, You can try to run cubian-nandinstall again. If the error still there, then you need to use livesuit restore a factory image first, then run cubian-nandinstall."
 	fi
 fi
+
+mount /dev/nandb /media/nandb || mount /dev/nand2 /media/nand2
+chown cubie:cubie /media/nandb/home/cubie || chown cubie:cubie /media/nand2/home/cubie
