@@ -299,4 +299,4 @@ if promptyn "Your data on $NAND_DEVICE will lost, Are you sure to continue?[y/n]
 fi
 
 mount /dev/nandb /media/nandb || mount /dev/nand2 /media/nand2
-chown cubie:cubie /media/nandb/home/cubie || chown cubie:cubie /media/nand2/home/cubie
+chown cubie:cubie -R /media/nandb/home/cubie || chown cubie:cubie -R /media/nand2/home/cubie
